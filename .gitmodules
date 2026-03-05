@@ -1,0 +1,3 @@
+[submodule "junk_gui_app"]
+	path = junk_gui_app
+	url = https://github.com/VidurMushran/human_in_the_loop_annotation_tool

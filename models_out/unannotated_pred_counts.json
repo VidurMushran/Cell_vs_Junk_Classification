@@ -1,0 +1,91 @@
+{
+  "labels": {
+    "0": "rare",
+    "1": "junk",
+    "2": "wbc"
+  },
+  "simple_cnn": {
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_0.hdf5": {
+      "0": 13453,
+      "2": 10004,
+      "1": 4705
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_1.hdf5": {
+      "0": 24054,
+      "1": 894,
+      "2": 615
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_2.hdf5": {
+      "0": 11149,
+      "2": 6706,
+      "1": 7634
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_3.hdf5": {
+      "0": 18477,
+      "1": 2341,
+      "2": 1713
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_4.hdf5": {
+      "0": 8470,
+      "1": 363,
+      "2": 70
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_5.hdf5": {
+      "1": 1193,
+      "0": 4504,
+      "2": 1222
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_6.hdf5": {
+      "0": 4401,
+      "1": 697,
+      "2": 122
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_7.hdf5": {
+      "1": 3826,
+      "0": 1129,
+      "2": 107
+    }
+  },
+  "resnet18_4ch": {
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_0.hdf5": {
+      "0": 11121,
+      "1": 12533,
+      "2": 4508
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_1.hdf5": {
+      "0": 24311,
+      "1": 1217,
+      "2": 35
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_2.hdf5": {
+      "0": 13454,
+      "1": 10075,
+      "2": 1960
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_3.hdf5": {
+      "1": 2959,
+      "0": 19509,
+      "2": 63
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_4.hdf5": {
+      "0": 8367,
+      "1": 527,
+      "2": 9
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_5.hdf5": {
+      "1": 1748,
+      "0": 4987,
+      "2": 184
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_6.hdf5": {
+      "0": 4464,
+      "1": 716,
+      "2": 40
+    },
+    "/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_7.hdf5": {
+      "1": 3877,
+      "0": 1180,
+      "2": 5
+    }
+  }
+}

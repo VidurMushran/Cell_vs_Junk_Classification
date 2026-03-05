@@ -1,0 +1,8 @@
+# junk_qc/config/eval_mm_default.yml
+# Defaults for: python -m junk_qc.scripts.eval_mm_confusion
+
+root: "/mnt/deepstore/Vidur/Junk Classification/data"
+checkpoint: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_013034_simple_cnn_aug/final_simple_cnn_aug_all_data.pt"
+out_dir: null       # null -> default to "<checkpoint_dir>/eval_mm_confusion"
+device: "cuda"
+batch_size: 512

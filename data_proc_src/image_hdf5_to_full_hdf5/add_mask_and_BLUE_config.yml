@@ -1,0 +1,40 @@
+# Input/output HDF5 paths
+input_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Rare_Cell/Rare_Cell.final.hdf5
+output_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Rare_Cell/Rare_Cell.final_BLUE_masks.hdf5
+
+# Dataset names inside the HDF5
+image_dataset_key: images
+channels_dataset_key: channels
+channels: [DAPI, TRITC, CY5, FITC]
+
+# Models
+mask_model_path: /mnt/deepstore/shared_models/purple/cellpose_model
+encode_model_path: /mnt/deepstore/shared_models/purple/representation_learning_04_28.pth
+
+# Optional models / extra scores
+enable_wbc: false
+classifier_path: /mnt/deepstore/shared_models/purple/wbc_model_0225.pth
+enable_outlier_detection: false
+outlier_contamination: 0.001
+
+# Device / parallelism
+# For GPU, start with workers: 1 because every worker loads a Cellpose model.
+# For CPU segmentation you can increase this more aggressively.
+device: cuda:0
+workers: 1
+feature_workers: 8
+dataloader_workers: 0
+
+# Cellpose settings
+cellpose_diameter: 20
+cellpose_batch_size: 8
+mask_chunk_size: 256
+
+# Feature / embedding batching
+feature_chunk_size: 512
+inference_batch: 4096
+wbc_batch_size: 4096
+
+# HDF5 writing
+hdf5_compression: gzip
+hdf5_compression_opts: 4

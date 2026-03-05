@@ -1,0 +1,25 @@
+# outlier_config.yml
+
+# Feature columns to use (default z0..z127). Override if your features differ.
+# feature_columns:
+
+# Methods to run (order matters only for output naming)
+methods:
+  - ecod
+  - copod
+
+# How many top outliers to save in the output parquet per-method
+top_k: 10000
+
+# When drawing the histogram, compute the threshold determined by the top N overall
+# (vertical line on histogram uses the score at the N-th largest value). Default 2500.
+top_n_threshold: 2500
+
+parquet_path: /mnt/deepstore/Vidur/Junk_Classification/test_data/BLUE_output/0AD5601.parquet
+
+# Where to write outputs (histograms and topk parquets)
+output_dir: /mnt/deepstore/Vidur/Junk_Classification/test_data/BLUE_output/outlier_outputs
+hist_subdir: histograms
+
+# Random seed (if needed by models)
+random_state: 42

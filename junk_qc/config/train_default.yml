@@ -1,0 +1,23 @@
+# junk_qc/config/train_default.yml
+# Defaults for: python -m junk_qc.scripts.main_train
+
+root: "/mnt/deepstore/Vidur/Junk Classification/data"
+base_out_dir: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs"
+
+arch: "simple_cnn"          # simple_cnn | rot_invariant_cnn | vgg19_bn | resnet18 | rot_invariant_cnn
+pretrained: false           # true for ImageNet transfer learning
+unfreeze_last: 0            # e.g. 4 for QUALIFAI-style fine-tuning
+use_qualifai_aug: true      # QUALIFAI-style hflip/vflip/±90° rotation
+
+epochs: 8
+batch_size: 256
+lr: 0.001
+alpha: 0.25                 # focal loss alpha
+gamma: 2.0                  # focal loss gamma
+nonjunk_to_junk: 1.5
+junk_k_max: 8
+junk_max_rows_for_kmeans: null
+seed: 42
+use_amp: true
+
+num_folds: 5

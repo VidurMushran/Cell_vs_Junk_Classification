@@ -1,0 +1,10 @@
+{
+  "center_border_ratio_mean": 24812.212890625,
+  "center_border_ratio_median": 10100.689453125,
+  "per_class": {
+    "notjunk": 20531.982421875,
+    "junk": 42337.73046875
+  },
+  "samples": 1024,
+  "dapi_channel_index": 0
+}

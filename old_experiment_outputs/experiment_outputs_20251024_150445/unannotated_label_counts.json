@@ -1,0 +1,42 @@
+{
+  "MM_cluster_0.hdf5": {
+    "n": 28162,
+    "junk": 2000,
+    "notjunk": 26162
+  },
+  "MM_cluster_1.hdf5": {
+    "n": 25563,
+    "junk": 2608,
+    "notjunk": 22955
+  },
+  "MM_cluster_2.hdf5": {
+    "n": 25489,
+    "junk": 4866,
+    "notjunk": 20623
+  },
+  "MM_cluster_3.hdf5": {
+    "n": 22531,
+    "junk": 2981,
+    "notjunk": 19550
+  },
+  "MM_cluster_4.hdf5": {
+    "n": 8903,
+    "junk": 464,
+    "notjunk": 8439
+  },
+  "MM_cluster_5.hdf5": {
+    "n": 6919,
+    "junk": 1002,
+    "notjunk": 5917
+  },
+  "MM_cluster_6.hdf5": {
+    "n": 5220,
+    "junk": 596,
+    "notjunk": 4624
+  },
+  "MM_cluster_7.hdf5": {
+    "n": 5062,
+    "junk": 3495,
+    "notjunk": 1567
+  }
+}

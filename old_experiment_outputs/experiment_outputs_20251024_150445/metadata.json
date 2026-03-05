@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-24T15:10:37.757276",
+  "root": "/mnt/deepstore/Vidur/Junk Classification/data_model_labels",
+  "epochs": 10,
+  "batch_size": 256,
+  "lr": 0.001,
+  "focal_alpha": 0.25,
+  "focal_gamma": 2.0,
+  "use_amp": true,
+  "nonjunk_to_junk": 1.5,
+  "val_frac": 0.4,
+  "junk_kmax": 8,
+  "junk_kmeans_cap": null,
+  "target_hw": 75,
+  "seed": 42,
+  "device": "cuda",
+  "python_version": "3.11.13 (main, Jun  5 2025, 13:12:00) [GCC 11.2.0]",
+  "torch_version": "2.8.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 4090\nNVIDIA GeForce RTX 4090"
+}

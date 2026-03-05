@@ -1,0 +1,19 @@
+folder,filename,path,has_images,image_shape,channels,n_cells,prop_of_all,folder_total_cells,prop_within_folder
+junk_annotated,oligo_junk.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/junk_annotated/oligo_junk.hdf5,True,"(8604, 75, 75, 4)",,8604,0.04971628664871549,8604,1.0
+rare_cells_annotated,IM_CTCs_filter.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/IM_CTCs_filter.hdf5,True,"(702, 75, 75, 4)","DAPI,TRITC,CY5,FITC",702,0.004056349747489339,6550,0.10717557251908397
+rare_cells_annotated,ctcs.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/ctcs.hdf5,True,"(321, 75, 75, 4)","DAPI,TRITC,CY5,FITC",321,0.0018548265939374328,6550,0.04900763358778626
+rare_cells_annotated,endos_cleaned.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/endos_cleaned.hdf5,True,"(210, 75, 75, 4)","DAPI,TRITC,CY5,FITC",210,0.001213437958650657,6550,0.03206106870229008
+rare_cells_annotated,large_d_only.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/large_d_only.hdf5,True,"(569, 75, 75, 4)","DAPI,TRITC,CY5,FITC",569,0.003287839040343923,6550,0.08687022900763358
+rare_cells_annotated,megas.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/megas.hdf5,True,"(71, 75, 75, 4)","DAPI,TRITC,CY5,FITC",71,0.00041025759554379356,6550,0.01083969465648855
+rare_cells_annotated,oligo_clean.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/oligo_clean.hdf5,True,"(4384, 75, 75, 4)",,4384,0.02533196195583086,6550,0.6693129770992367
+rare_cells_annotated,pc_ctcs.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/pc_ctcs.hdf5,True,"(181, 75, 75, 4)","DAPI,TRITC,CY5,FITC",181,0.0010458679548369949,6550,0.02763358778625954
+rare_cells_annotated,vim.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/rare_cells_annotated/vim.hdf5,True,"(112, 75, 75, 4)","DAPI,TRITC,CY5,FITC",112,0.0006471669112803504,6550,0.017099236641221375
+wbcs_annotated,0ADD705_wbcs.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/wbcs_annotated/0ADD705_wbcs.hdf5,True,"(30059, 45, 45, 4)","DAPI,TRITC,CY5,FITC",30059,0.17368919809085762,30059,1.0
+unannotated,MM_cluster_0.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_0.hdf5,True,"(28162, 75, 75, 4)","DAPI,TRITC,CY5,FITC",28162,0.16272780853104668,127849,0.2202754812317656
+unannotated,MM_cluster_1.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_1.hdf5,True,"(25563, 75, 75, 4)","DAPI,TRITC,CY5,FITC",25563,0.1477100692237464,127849,0.19994681225508218
+unannotated,MM_cluster_2.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_2.hdf5,True,"(25489, 75, 75, 4)","DAPI,TRITC,CY5,FITC",25489,0.14728247680022188,127849,0.19936800444274105
+unannotated,MM_cluster_3.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_3.hdf5,True,"(22531, 75, 75, 4)","DAPI,TRITC,CY5,FITC",22531,0.13019033641122835,127849,0.1762313354034838
+unannotated,MM_cluster_4.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_4.hdf5,True,"(8903, 75, 75, 4)","DAPI,TRITC,CY5,FITC",8903,0.05144399117079428,127849,0.06963683720639191
+unannotated,MM_cluster_5.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_5.hdf5,True,"(6919, 75, 75, 4)","DAPI,TRITC,CY5,FITC",6919,0.039979891599542364,127849,0.05411853045389483
+unannotated,MM_cluster_6.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_6.hdf5,True,"(5220, 75, 75, 4)","DAPI,TRITC,CY5,FITC",5220,0.03016260068645919,127849,0.04082941595163044
+unannotated,MM_cluster_7.hdf5,/mnt/deepstore/Vidur/Junk Classification/data/unannotated/MM_cluster_7.hdf5,True,"(5062, 75, 75, 4)","DAPI,TRITC,CY5,FITC",5062,0.029249633079474407,127849,0.039593583055010206

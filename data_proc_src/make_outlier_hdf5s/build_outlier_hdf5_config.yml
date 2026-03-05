@@ -1,0 +1,43 @@
+# Input parquet from either:
+# 1) BLUE outlier output, for example: 0AD5601_copod_10000.parquet
+# 2) RED-BLUE coordinate output, for example: rarest_coords_filtered.parquet
+input_parquet: /mnt/deepstore/Vidur/Junk_Classification/test_data/RED_BLUE_output/0AD5601/rarest_coords_filtered.parquet
+
+# Output HDF5 to create
+output_h5: /mnt/deepstore/Vidur/Junk_Classification/test_data/RED_BLUE_output/0AD5601/0AD5601_RED_2500.full.hdf5
+
+# Optional if the parquet does not already contain slide_id
+# If null, the script tries:
+# - parquet slide_id column
+# - filename stem before first underscore
+# - parent directory name
+slide_id: null
+
+# Optional explicit image directory for the slide.
+# If null, the script searches /mnt/*/Oncoscope/tubeID_xxxxx/*/slideID_<slide_id>/bzScanner/proc
+images_path: null
+
+# Optional explicit tile format.
+# If null, the script auto-detects Tile%06d.tif vs Tile%06d.jpg from the image directory.
+tile_format: null
+
+# Channel layout copied from the existing extraction and BLUE pipeline
+channels: [DAPI, TRITC, CY5, FITC]
+starts: [1, 2305, 4609, 9217]
+width: 75
+
+# Models
+mask_model_path: /mnt/deepstore/shared_models/purple/cellpose_model
+encode_model_path: /mnt/deepstore/shared_models/purple/representation_learning_04_28.pth
+
+# Compute settings
+device: cuda:0
+workers: 8
+feature_workers: 8
+embedding_workers: 4
+cellpose_batch_size: 8
+embedding_batch_size: 4096
+mask_diameter: 15
+
+# Verbosity passed into slideutils logger
+verbose: 1

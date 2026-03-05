@@ -1,0 +1,31 @@
+# Large data
+data/
+*.hdf5
+*.h5
+*.parquet
+*.feather
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+data_model_labels/
+*.hdf5
+*.h5
+*.parquet
+*.feather
+*.npy
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# Temp / generated folders
+data_proc_src/calc_norm_stats/slide_stats_temp/
+
+# Python junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

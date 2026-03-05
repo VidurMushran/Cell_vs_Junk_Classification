@@ -1,0 +1,6 @@
+# junk_qc/config/compare_models.yml
+# Defaults for: python -m junk_qc.scripts.compare_models
+
+simple: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_013034_simple_cnn_aug/cv_metrics_simple_cnn_aug.json"
+rot: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_013408_rot_invariant_cnn_aug/cv_metrics_rot_invariant_cnn_aug.json"
+pretrained: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_013549_vgg19_bn_aug/cv_metrics_vgg19_bn_aug.json"

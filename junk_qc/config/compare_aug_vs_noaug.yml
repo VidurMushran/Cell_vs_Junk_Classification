@@ -1,0 +1,5 @@
+# junk_qc/config/compare_aug_vs_noaug.yml
+# Defaults for: python -m junk_qc.scripts.compare_aug_vs_noaug
+
+aug_metrics: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_013034_simple_cnn_aug/cv_metrics_simple_cnn_aug.json"
+noaug_metrics: "/mnt/deepstore/Vidur/Junk Classification/experiment_outputs/20251203_014101_simple_cnn_noaug/cv_metrics_simple_cnn_noaug.json"
