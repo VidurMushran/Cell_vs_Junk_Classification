@@ -22,6 +22,17 @@ data_model_labels/
 *.pt
 *.pth
 
+test_data/
+*.hdf5
+*.h5
+*.parquet
+*.feather
+*.npy
+*.pkl
+*.joblib
+*.pt
+*.pth
+
 # Temp / generated folders
 data_proc_src/calc_norm_stats/slide_stats_temp/
 
