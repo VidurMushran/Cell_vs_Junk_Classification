@@ -353,19 +353,40 @@ def compute_basic_and_regionprops_for_event(args):
     if np.count_nonzero(mask2d) > 0:
         props = measure.regionprops_table(
             mask2d,
-            image,
+            intensity_image=image,
             separator='_',
             properties=['area', 'eccentricity', 'intensity_mean'],
         )
-        if len(props['area']) > 0:
+
+        if len(props.get('area', [])) > 0:
             out['area'] = int(props['area'][0])
             out['eccentricity'] = float(props['eccentricity'][0])
-            means = np.asarray(props['intensity_mean'][0]).ravel()
-            for ch_name, v in zip(channels, means.tolist()):
-                out[f'{ch_name}_mean'] = float(v)
 
-        cell_prop_dict = compute_regionprops_dict(mask2d.astype(np.uint8), intensity_img=None, prefix='cell_prop_')
+            means = []
+
+            # Case 1: older/alternate API shape with a single array-valued field
+            if 'intensity_mean' in props:
+                means = np.asarray(props['intensity_mean'][0]).ravel().tolist()
+
+            # Case 2: actual shape in your environment: intensity_mean_0, intensity_mean_1, ...
+            else:
+                for ch_idx in range(len(channels)):
+                    key = f'intensity_mean_{ch_idx}'
+                    if key in props and len(props[key]) > 0:
+                        means.append(float(props[key][0]))
+                    else:
+                        means.append(np.nan)
+
+            for ch_name, v in zip(channels, means):
+                out[f'{ch_name}_mean'] = float(v) if not pd.isna(v) else np.nan
+
+        cell_prop_dict = compute_regionprops_dict(
+            mask2d.astype(np.uint8),
+            intensity_img=None,
+            prefix='cell_prop_'
+        )
         out.update(cell_prop_dict)
+
     else:
         out['area'] = 0
         out['eccentricity'] = np.nan

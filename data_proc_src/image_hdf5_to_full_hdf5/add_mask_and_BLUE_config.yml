@@ -1,6 +1,8 @@
 # Input/output HDF5 paths
-input_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Rare_Cell/Rare_Cell.final.hdf5
-output_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Rare_Cell/Rare_Cell.final_BLUE_masks.hdf5
+input_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Not_interesting/Not_interesting.final.hdf5
+output_h5: /mnt/deepstore/Vidur/Junk_Classification/data/Not_interesting/Not_interesting.full.hdf5
+# Optional output path for the missing-mask report
+missing_masks_txt: /mnt/deepstore/Vidur/Junk_Classification/data/Not_interesting/output_missing_masks.txt
 
 # Dataset names inside the HDF5
 image_dataset_key: images
@@ -17,13 +19,20 @@ classifier_path: /mnt/deepstore/shared_models/purple/wbc_model_0225.pth
 enable_outlier_detection: false
 outlier_contamination: 0.001
 
+# Used for reading full tiles for fallback (same convention as pipeline)
+starts: [1, 2305, 4609, 9217]
+
+# Optional separate Cellpose settings for full-tile segmentation
+tile_cellpose_diameter: 20
+tile_cellpose_batch_size: 8
+
 # Device / parallelism
 # For GPU, start with workers: 1 because every worker loads a Cellpose model.
 # For CPU segmentation you can increase this more aggressively.
 device: cuda:0
 workers: 1
-feature_workers: 8
-dataloader_workers: 0
+feature_workers: 16
+dataloader_workers: 32
 
 # Cellpose settings
 cellpose_diameter: 20
