@@ -1,0 +1,55 @@
+models:
+  # - name: xgb_feat_only
+  #   type: sklearn
+  #   path: trained_models/xgb_feat_only.joblib
+  #   input_mode: features
+  #   feature_columns:
+  #     - area
+  #     - eccentricity
+  #     - DAPI_mean
+  #     - TRITC_mean
+  #     - CY5_mean
+  #     - FITC_mean
+  #     - z0
+  #     - z1
+  #     - z2
+  #   scaler_path: trained_models/xgb_feat_only_scaler.joblib
+  #   positive_class_index: 1
+
+  - name: 20251215_191039
+    type: torch
+    format: torchscript
+    path: /mnt/deepstore/Vidur/Junk_Classification/junk_gui_app/runs/20251215_191039/checkpoint.pt
+    input_mode: image
+    image_norm: "255" # 65535
+    mask_binarize: false
+    output_activation: auto
+    positive_class_index: 1
+
+  # - name: multimodal_img_mask_feat
+  #   type: torch
+  #   format: checkpoint
+  #   path: trained_models/multimodal_img_mask_feat.pth
+  #   model_class: my_models.multimodal:MultiModalNet
+  #   model_kwargs:
+  #     in_channels: 4
+  #     mask_channels: 1
+  #     num_features: 10
+  #   input_mode: image_mask_features
+  #   feature_columns:
+  #     - area
+  #     - eccentricity
+  #     - DAPI_mean
+  #     - TRITC_mean
+  #     - CY5_mean
+  #     - FITC_mean
+  #     - z0
+  #     - z1
+  #     - z2
+  #     - z3
+  #   scaler_path: trained_models/multimodal_scaler.joblib
+  #   image_norm: "65535"
+  #   mask_binarize: true
+  #   output_activation: auto
+  #   positive_class_index: 1
+  #   strict: true
